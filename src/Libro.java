@@ -1,4 +1,4 @@
-public class Libro {
+public class Libro implements Prestable {
 
         private String titulo;
         private String autor;
@@ -41,5 +41,21 @@ public class Libro {
 
     public void setCopias(int copias) {
         this.copias = copias;
+    }
+
+    @Override
+    public boolean prestar() {
+        if (copias > 0) {
+            copias--;
+            return true;
+        }
+
+        return false;
+    }
+
+    @Override
+    public boolean devolver() {
+        copias++;
+        return true;
     }
 }
