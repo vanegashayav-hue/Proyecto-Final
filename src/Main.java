@@ -70,5 +70,11 @@ public class Main {
 
         // Mostrar todos los libros
         biblioteca.mostrarLibros();
+
+        // Eliminar un libro
+
+        biblioteca.eliminarLibro("001");
+        System.out.println("Después de eliminar el libro:");
+        biblioteca.mostrarLibros();
     }
 }

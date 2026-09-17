@@ -47,6 +47,17 @@ public class Biblioteca {
         return null;
     }
 
+    public void eliminarLibro(String codigo) {
+
+        for (int i = 0; i < libros.size(); i++) {
+
+            if (libros.get(i).getCodigo().equals(codigo)) {
+                libros.remove(i);
+                return;
+            }
+        }
+    }
+
     public boolean prestarLibro(String codigo) {
 
         for (Libro libro : libros) {
