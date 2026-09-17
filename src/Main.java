@@ -27,6 +27,23 @@ public class Main {
         biblioteca.agregarLibro(libro1);
         biblioteca.agregarLibro(libro2);
 
+        Libro libro3 = new Libro(
+                "Otro libro",
+                "Otro autor",
+                "001",
+                "Novela",
+                2020,
+                1
+        );
+
+        boolean agregado = biblioteca.agregarLibro(libro3);
+
+        if (agregado) {
+            System.out.println("El libro fue agregado.");
+        } else {
+            System.out.println("No se puede agregar: el código ya existe.");
+        }
+
         // Buscar por título
         ArrayList<Libro> resultadosTitulo =
                 biblioteca.buscarPorTitulo("Cien años de soledad");

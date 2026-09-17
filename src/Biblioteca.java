@@ -3,8 +3,14 @@ public class Biblioteca {
 
     private ArrayList<Libro> libros = new ArrayList<>();
 
-    public void agregarLibro(Libro libro) {
+    public boolean agregarLibro(Libro libro) {
+
+        if (buscarPorCodigo(libro.getCodigo()) != null) {
+            return false;
+        }
+
         libros.add(libro);
+        return true;
     }
 
     public ArrayList<Libro> obtenerLibros() {
