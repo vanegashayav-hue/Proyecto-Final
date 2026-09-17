@@ -59,3 +59,8 @@ El proyecto utiliza:
 ## Autor
 
 Proyecto realizado para el Taller Práctico de Java - Programación Orientada a Objetos.
+
+## Uso de IA
+
+Se utilizó inteligencia artificial como apoyo para comprender conceptos de Java, 
+programación orientada a objetos, Java Swing y Git, verificando y entendiendo el código utilizado.
