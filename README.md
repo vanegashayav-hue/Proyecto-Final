@@ -49,16 +49,18 @@ El proyecto utiliza:
 - `ArrayList` para almacenar los libros.
 - `HashMap` para buscar los libros mediante su código.
 
-## Cómo ejecutar el proyecto
+## Cómo compilar y ejecutar el proyecto
 
 1. Abrir el proyecto en IntelliJ IDEA.
 2. Abrir la clase `Main.java`.
-3. Ejecutar el método `main`.
-4. Se abrirá la ventana de Gestión de Biblioteca.
+3. Compilar el proyecto desde IntelliJ IDEA.
+4. Ejecutar el método `main`.
+5. Se abrirá la ventana de Gestión de Biblioteca.
 
-## Autor
+## Integrantes
 
-Proyecto realizado para el Taller Práctico de Java - Programación Orientada a Objetos.
+- Michelle Suárez Castaño
+- Valentina Vanegas Haya
 
 ## Uso de IA
 
