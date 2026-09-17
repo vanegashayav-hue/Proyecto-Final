@@ -1,7 +1,9 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 public class Biblioteca {
 
     private ArrayList<Libro> libros = new ArrayList<>();
+    private HashMap<String, Libro> librosPorCodigo = new HashMap<>();
 
     public boolean agregarLibro(Libro libro) {
 
@@ -10,6 +12,8 @@ public class Biblioteca {
         }
 
         libros.add(libro);
+        librosPorCodigo.put(libro.getCodigo(), libro);
+
         return true;
     }
 
@@ -43,14 +47,7 @@ public class Biblioteca {
     }
 
     public Libro buscarPorCodigo(String codigo) {
-
-        for (Libro libro : libros) {
-            if (libro.getCodigo().equals(codigo)) {
-                return libro;
-            }
-        }
-
-        return null;
+        return librosPorCodigo.get(codigo);
     }
 
     public void eliminarLibro(String codigo) {
@@ -59,11 +56,11 @@ public class Biblioteca {
 
             if (libros.get(i).getCodigo().equals(codigo)) {
                 libros.remove(i);
+                librosPorCodigo.remove(codigo);
                 return;
             }
         }
     }
-
     public boolean prestarLibro(String codigo) {
 
         for (Libro libro : libros) {
